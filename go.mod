@@ -50,12 +50,9 @@ require (
 	sigs.k8s.io/yaml v1.4.0
 )
 
-replace github.com/openshift/api => github.com/atiratree/api v0.0.0-20240815160400-5b5d653b3369
+replace github.com/openshift/api => github.com/atiratree/api v0.0.0-20240828214123-d1c589f49b49
 
-// TODO: remove after we bring in changes from https://github.com/kubernetes/kubernetes/pull/126557 which is required for generated clients
-replace k8s.io/client-go => github.com/atiratree/kubernetes-client-go v0.0.0-20240806190405-295191fcd656
-
-replace github.com/openshift/client-go => github.com/atiratree/client-go v0.0.0-20240815161612-1bc9a0b37591
+replace github.com/openshift/client-go => github.com/atiratree/client-go v0.0.0-20240828225000-cb944a1dac60
 
 require (
 	github.com/Azure/go-ntlmssp v0.0.0-20211209120228-48547f28849e // indirect
